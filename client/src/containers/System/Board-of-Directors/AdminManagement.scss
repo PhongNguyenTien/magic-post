@@ -1,0 +1,193 @@
+.admin-container {
+     max-width: 1500px !important;
+     background-color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     .button {
+          @media (min-width: 1490px) {
+               font-size: 17px;
+          }
+          @media (max-width: 1489px) {
+               font-size: 10px;
+          }
+     }
+
+     .title-admin {
+          @media (min-width: 1490px) {
+               font-size: 17px;
+          }
+          @media (max-width: 1489px) {
+               font-size: 2vw;
+          }
+          font-weight: 600;
+          text-transform: uppercase;
+          font-family: Montserrat, sans-serif !important;
+          // span {
+          //      box-shadow: 5px 10px 18px #888888;
+          // }
+     }
+     .admin-content {
+          @media (min-width: 1490px) {
+               font-size: 15px !important;
+          }
+          @media (max-width: 1489px) {
+               font-size: 2vw !important;
+          }
+          min-height: 70vh;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          box-shadow: 0 0 20px #333;
+          // margin: 40px;
+
+          border-collapse: collapse;
+          overflow: hidden;
+          padding: 10px;
+          .btn-director-add-new-user-container {
+               display: flex;
+               justify-content: space-between;
+               .btn-primary {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    background-color: #0062a1;
+               }
+               .btn-option-container {
+                    display: flex;
+                    gap: 2rem;
+               }
+          }
+          .select-statistic-parcel {
+               border-bottom: 1px solid #ddd;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               @media (min-width: 1495px) {
+                    font-size: 14px;
+               }
+               @media (max-width: 1495px) {
+                    font-size: px;
+               }
+          }
+
+          .statistic-container {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: #f8f4f4;
+               @media (min-width: 1495px) {
+                    height: 70vh;
+               }
+               // height: 70vh;
+               .statistic-content {
+                    height: 100%;
+                    width: 70%;
+
+                    .chart-content {
+                         // border: 1px solid red;
+                         display: flex;
+                         // height: 8vh;
+                         .border-chart {
+                              background-color: #f6f2f2;
+                              display: flex;
+                              align-items: center;
+                              justify-content: space-between;
+                              border: 1px solid #ddd;
+                              border-radius: 100px;
+                              grid-gap: 20px;
+                              width: 60%;
+                              gap: 20px;
+
+                              .parcel {
+                                   display: flex;
+                                   align-items: center;
+                                   justify-content: center;
+                                   border: 1px solid #ddd;
+                                   border-radius: 100px;
+                                   color: rgb(241, 233, 233);
+                              }
+                              .shipment {
+                                   background-color: rgb(0, 30, 128);
+
+                                   i {
+                                        @media (min-width: 1495px) {
+                                             font-size: 2.5vh;
+                                        }
+                                        @media (max-width: 1495px) {
+                                             font-size: 2vh;
+                                        }
+                                   }
+                              }
+                              .good-received {
+                                   background-color: rgb(0, 128, 119);
+
+                                   i {
+                                        @media (min-width: 1495px) {
+                                             font-size: 2.5vh;
+                                        }
+                                        @media (max-width: 1495px) {
+                                             font-size: 2vh;
+                                        }
+                                   }
+                              }
+                              .data-container {
+                                   @media (min-width: 1495px) {
+                                        font-size: 15px;
+                                   }
+                                   @media (max-width: 1495px) {
+                                        font-size: 6px;
+                                   }
+                                   display: flex;
+                                   flex-direction: column;
+                                   .title-chart {
+                                        font-weight: 600;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+          .table-user-content {
+               .customers {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    border-collapse: collapse;
+                    overflow: hidden;
+                    width: 100%;
+                    .STT {
+                         padding: 0.3rem;
+                    }
+                    thead {
+                         background-color: #333;
+                         color: white;
+                    }
+                    th,
+                    td {
+                         border: 1px solid #c9c4c4 !important;
+                         padding: 0.5rem 0;
+                    }
+                    .break-word {
+                         word-wrap: break-word;
+                    }
+               }
+
+               .btn-edit {
+                    width: 50px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: orange;
+
+                    &:hover {
+                         background-color: transparent !important;
+                         color: orange !important;
+                    }
+               }
+               .btn-delete {
+                    width: 50px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: rgb(222, 11, 11);
+
+                    &:hover {
+                         background-color: transparent !important;
+                         color: rgb(222, 11, 11) !important;
+                    }
+               }
+          }
+     }
+}
